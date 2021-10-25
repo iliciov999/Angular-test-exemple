@@ -1,0 +1,17 @@
+<div>
+  <h1 class="zona1">Zona 4</h1>
+  <div class="flex-box">
+    <div class="flex-item">
+      <div class="box-width" *ngFor="let data of arrWith3003 | async">
+        <div class="box-part">
+          <div class="color-section"  [ngClass]="{ 'secondState' : data.joinedWith === null }">
+          </div>
+          <div class="numb-section">
+            <div class="first-nb"><span>{{data.sku}}</span></div>
+            <div class="sec-nb"><span>{{data.defaultSku}}</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

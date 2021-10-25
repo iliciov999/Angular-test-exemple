@@ -1,0 +1,95 @@
+<div>
+  <h1 class="zona1">Zona 1</h1>
+  <div class="flex-box">
+    <div class="flex-item">
+      <div class="box-width" *ngFor="let data of arrWith2861 | async">
+        <div class="box-part">
+          <div class="color-section"  [ngClass]="{ 'firstState' : data.joinedWith === null  }">
+          </div>
+          <div class="numb-section">
+            <div class="first-nb"><span>{{data.sku}}</span></div>
+            <div class="sec-nb"><span>{{data.defaultSku}}</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="flex-item">
+      <div class="box-width" *ngFor="let data2 of arrWith2971 | async">
+        <div class="box-part">
+          <div class="color-section"  [ngClass]="{ 'secondState' : data2.joinedWith === null }">
+          </div>
+          <div class="numb-section">
+            <div class="first-nb"><span>{{data2.sku}}</span></div>
+            <div class="sec-nb"><span>{{data2.defaultSku}}</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="flex-item">
+      <div class="box-width" *ngFor="let data3 of arrWith2973 | async">
+        <div class="box-part">
+          <div class="color-section"  [ngClass]="{ 'secondState' : data3.joinedWith === null }">
+          </div>
+          <div class="numb-section">
+            <div class="first-nb"><span>{{data3.sku}}</span></div>
+            <div class="sec-nb"><span>{{data3.defaultSku}}</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="flex-item">
+      <div class="box-width" *ngFor="let data4 of sortedData1">
+        <div class="box-part">
+          <div class="color-section"  [ngClass]="{ 'secondState' : data4.joinedWith === null }">
+          </div>
+          <div class="numb-section">
+            <div class="first-nb"><span>{{data4.sku}}</span></div>
+            <div class="sec-nb"><span>{{data4.defaultSku}}</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="flex-item">
+      <div class="box-width" *ngFor="let data5 of arrWith2970 | async">
+        <div class="box-part">
+          <div class="color-section"  [ngClass]="{ 'lastState' : data5.status === 'closed'  }">
+          </div>
+          <div class="numb-section">
+            <div class="first-nb"><span>{{data5.sku}}</span></div>
+            <div class="sec-nb"><span>{{data5.defaultSku}}</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="flex-item">
+      <div class="box-width" *ngFor="let data5 of arrWith2979 | async">
+        <div class="box-part">
+          <div class="color-section"  [ngClass]="{ 'secondState' : data5.joinedWith === null }">
+          </div>
+          <div class="numb-section">
+            <div class="first-nb"><span>{{data5.sku}}</span></div>
+            <div class="sec-nb"><span>{{data5.defaultSku}}</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="flex-item">
+      <div class="box-width" *ngFor="let data5 of arrWith2980 | async">
+        <div class="box-part">
+          <div class="color-section"  [ngClass]="{ 'secondState' : data5.joinedWith === null  }">
+          </div>
+          <div class="numb-section">
+            <div class="first-nb"><span>{{data5.sku}}</span></div>
+            <div class="sec-nb"><span>{{data5.defaultSku}}</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+  </div>
+</div>
